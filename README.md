@@ -1,7 +1,7 @@
 # Проект «Sedona»
 
 * Студент: [Лариса Козяровская](https://htmlacademy.ru/profile/id32887).
-* Наставник: `Unknown`.
+* Наставник: [Николай Громов] (https://htmlacademy.ru/profile/id6170).
 
 --
 

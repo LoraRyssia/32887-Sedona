@@ -3,16 +3,14 @@
 
   <head>
     <meta charset="utf-8">
-  <title>HTML Academy: Sedona</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  	<title>HTML Academy: Sedona</title>
+  	<!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   
-<body>
-	<div class="page-wrapper">
+	<body>
+		<div class="page-wrapper">
 
-		<header class="page-header">
-
-			<div class="page-header__top">
+			<header class="page-header">				
 				<div class="page-header__nav-wrap">
 					<nav class="main-nav">
 						<a id="nav-hide" class="main-nav__nav-hide"></a>
@@ -29,54 +27,48 @@
 						<img src="/images/logo.png" alt="Sedona">
 					</a>
 				</div>
-				<a id="respsv-nav-btn" class="page-header__respsv-nav-btn" href=""></a>
-			</div>
-			<div class="page-header__intro">
-				<div class="page-intro">				
-					<p class="page-intro__invite">Welcome <span>to the gorgeous</span></p>
-					<h1 class="page-intro__page-title">Sedona</h1>
-					<p class="page-intro__slogan">"Because the Grand Canyon sucks!"</p>				
-				</div>
+				<a id="respsv-nav-btn" class="page-header__respsv-nav-btn" href=""></a>								
+			</header>
 
-				<div class="page-intro__descr">
-						<h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-						<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-						
-				</div> 
-			</div>
-		</header>
+			<main>
 
-		<main>
-			
+				<div class="page__intro">
+					<div class="page-intro__wrap">				
+						<p class="page-intro__invite">Welcome <span>to the gorgeous</span></p>
+						<h1 class="page-intro__page-title">Sedona</h1>
+						<p class="page-intro__slogan">"Because the Grand Canyon sucks!"</p>				
+					</div>
 
-			<section class="features">				
+					<div class="page-intro__descr">
+							<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+							<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>							
+					</div> 
+				</div>								
 
 				<div class="feature">
-
 					<div class="feature__header">
-					  <h3 class="feature_title">Настоящий городок</h3>
-					  <div class="feature__sub-title">№1</div>
-					  <p class="feature__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
-				    </div>
+						<h3 class="feature_title">Настоящий городок</h3>
+						<div class="feature__sub-title">№1</div>
+						<p class="feature__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
+					</div>
 
-					<figure class="feature__img">
+					<div class="feature__img">
 						<img src="/images/city.jpg" alt="Sedona city">
-					</figure>
+					</div>
 
 					<div class="feature__list">
-
 						<div class="feature__list-item">
-							<h4 class="feature__list-item-title">Жилье</h4>
+							<h4 class="feature__list-item-title feature__list-item-title--house">Жилье</h4>
 							<p class="feature__list-item-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</div>
 
 						<div class="feature__list-item">
-							<h4 class="feature__list-item-title">Сувениры</h4>
+							<h4 class="feature__list-item-title  feature__list-item-title--gifts">Сувениры</h4>
 							<p class="feature__list-item-descr">Не только китайского, но и местного производства!</p>
 						</div>
 
 						<div class="feature__list-item">
-							<h4 class="feature__list-item-title">Еда</h4>
+							<h4 class="feature__list-item-title feature__list-item-title--food">Еда</h4>
 							<p class="feature__list-item-descr">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
 						</div>
 
@@ -85,14 +77,14 @@
 				</div>
 
 				<div class="feature">
-					<divclass="feature__header">
+					<div class="feature__header">
 						<h3 class="feature_title">Там есть мост дьявола</h3>
 						<div class="feature__sub-title">№2</div>
-						<p class="feature__descr">Да, по нему можно пройт! Если, конечно, вы осмелитесь!</p>
+						<p class="feature__descr">Да, по нему можно пройти! Если, конечно, вы осмелитесь!</p>
 					</div>
-					<figure class="feature__img">
+					<div class="feature__img">
 						<img src="/images/canyon.jpg" alt="Sedona Canyon">
-					</figure>
+					</div>
 				</div>
 
 				<div class="features-list">
@@ -111,52 +103,58 @@
 						<div class="features-list__sub-title">№5</div>
 						<p class="features-list__descr">Большинство едет в Гранд Каньон и толпится там</p>
 					</div>
+				</div>				
+
+				<section class="hotel-search">
+					<div class="promo">
+						<p class="promo__title">Заинтересовались?</p>
+						<p class="promo__descr">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					</div>
+					<h3 class="hotel-search__title">Поиск гостиницы в Седоне</h3>
+					<div class="hotel-search__form-wrap">
+						<form class="hotel-search__form">
+							<div class="hotel-search__form-input">
+								<label class="hotel-search__label" for="arrival-date">Дата заезда:</label>
+								<input class="hotel-search__input-date" name="arrival-date" id="arrival-date" type="date">
+							</div>
+							<div class="hotel-search__form-input">
+								<label class="hotel-search__label" for="departure-date">Дата  выезда:</label>
+								<input class="hotel-search__input-date" name="departure-date" id="departure-date" type="date">
+							</div>
+							<div class="one-half-form">
+								<div class="hotel-search__form-input">
+									<label class="hotel-search__label" for="adults-number">Взрослые:</label>
+									<input class="hotel-search__input-number" name="adults-number" id="adults-number" type="number">
+								</div>
+							</div>
+							<div class="one-half-form">
+								<div class="hotel-search__form-input">
+									<label class="hotel-search__label" for="children-number">Дети:</label>
+									<input class="hotel-search__input-number" name="children-number" id="children-number" type="number">
+								</div>
+							</div>							
+							<input class="hotel-search__button" type="submit" value="Найти">							
+						</form>
+					</div>
+				</section>
+				<div class="map"></div>
+
+			</main>
+
+			<footer class="page-footer">				
+				<div class="page-footer__inner">
+					<a class="page-footer__tag" href="">#visitsedona</a>
+					<div class="page-footer__social-buttons">
+						<div class="page-footer__social-btn page-footer__social-btn--twitter"><a href="">Twitter</a></div>
+						<div class="page-footer__social-btn page-footer__social-btn--fb"><a href="">Facebook</a></div>
+						<div class="page-footer__social-btn page-footer__social-btn--ytube"><a href="">YouTube</a></div>
+					</div>
+					<div class="page-footer__copyright">website by <a href=""><img src="images/icon-logo1.png"></a> for <a href=""><img src="images/icon-logo2.png"></a></div>
 				</div>
 
-			</section>
+			</footer>
 
-			<section class="hotel-search">
-				<div class="promo">
-					<h3 class="promo__title">Заинтересовались?</h3>
-					<p class="promo__descr">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				</div>
-				<h3 class="hotel-search__title">Поиск гостиницы в Седоне</h3>
-				<div class="hotel-search__form-wrap">
-					<form class="hotel-search__form">
-						<label class="hotel-search__label">Дата заезда:</label>
-						<input class="hotel-search__input-date" type="date">
-						<label class="hotel-search__label">Дата  выезда:</label>
-						<input class="hotel-search__input-date" type="date">
-						<div class="one-half-form">
-							<label class="hotel-search__label">Взрослые:</label>
-							<input class="hotel-search__input-number" type="number">
-						</div>
-						<div class="one-half-form">
-							<label class="hotel-search__label">Дети:</label>
-							<input class="hotel-search__input-number" type="number">
-						</div>
-						<button class="hotel-search__button">Найти</button>
-					</form>
-				</div>
-			</section>
-			<figure class="map"></figure>
-		</main>
+		</div>
 
-		<footer class="page-footer">
-			
-			<div class="page-footer__inner">
-				<span>#visitsedona</span>
-				<div class="page-footer__social-buttons">
-					<div class="page-footer__social-buttons-btn page-footer__social-buttons-btn--twitter"></div>
-					<div class="page-footer__social-buttons-btn page-footer__social-buttons-btn--fb"></div>
-					<div class="page-footer__social-buttons-btn page-footer__social-buttons-btn--ytube"></div>
-				</div>
-				<div class="page-footer__copyright">website by <img > for <img></div>
-
-			</div>
-
-		</footer>
-	</div>
-
-</body>
+	</body>
 </html>
